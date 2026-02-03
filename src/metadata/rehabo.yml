@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/rehabo
+
+idspace: REHABO
+base_url: /obo/rehabo
+
+products:
+- rehabo.owl: https://raw.githubusercontent.com/mcwdsi/rehabo/main/rehabo.owl
+- rehabo.obo: https://raw.githubusercontent.com/mcwdsi/rehabo/main/rehabo.obo
+
+term_browser: ontobee
+example_terms:
+- REHABO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/mcwdsi/rehabo/v
+
+- prefix: /tracker/
+  replacement: https://github.com/mcwdsi/rehabo/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/REHABO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/mcwdsi/rehabo/main/
+

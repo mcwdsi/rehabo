@@ -1,0 +1,44 @@
+id: rehabo
+title: "The Rehabilitation Ontology"
+description: "An ontology of physical medicine & rehabilitation, physical therapy, occupational therapy, and speech therapy."
+contact: William R. Hogan
+contributors:
+  ["Manoj Purohit", "Max Pena", "William R. Hogan"]
+github_org: mcwdsi
+git_main_branch: main
+repo: rehabo
+release_artefacts:
+  - base
+  - full
+  - simple
+primary_release: full
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  products:
+    - id: ro
+      mirror_from: http://purl.obolibrary.org/obo/ro/core.owl
+    - id: bfo
+      module_type: mirror
+    - id: omo
+      module_type: mirror
+    - id: ogms
+      module_type: filter
+      make_base: true
+    - id: omrse
+      module_type: filter
+      make_base: true
+license: https://creativecommons.org/public-domain/cc0/
+documentation:
+  documentation_system: mkdocs
+robot_java_args: "-Xmx8G"
+robot_report:
+  use_labels: TRUE
+  fail_on: ERROR
+  custom_profile: TRUE
+  report_on:
+    - edit
+workflows:
+  ["docs"]
