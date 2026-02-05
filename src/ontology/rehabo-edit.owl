@@ -9,39 +9,55 @@ Prefix(dcterms:=<http://purl.org/dc/terms/>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rehabo.owl>
-
-Import(<http://purl.obolibrary.org/obo/rehabo/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/bfo_import.owl>)
-Import(<http://purl.obolibrary.org/obo/rehabo/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/ogms_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rehabo/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/omrse_import.owl>)
-
-
+Import(<http://purl.obolibrary.org/obo/rehabo/imports/ro_import.owl>)
 Annotation(dcterms:description "An ontology of physical medicine & rehabilitation, physical therapy, occupational therapy, and speech therapy.")
 Annotation(dcterms:license <https://creativecommons.org/public-domain/cc0/>)
 Annotation(dcterms:title "The Rehabilitation Ontology")
-
 
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000000>))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-
 ############################
 #   Annotation Properties
 ############################
 
+# Annotation Property: dcterms:description (description)
+
 AnnotationAssertion(rdfs:label dcterms:description "description")
+
+# Annotation Property: dcterms:license (license)
+
 AnnotationAssertion(rdfs:label dcterms:license "license")
+
+# Annotation Property: dcterms:title (title)
+
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
+
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/REHABO_0000000> (root node)
+# Class: <http://purl.obolibrary.org/obo/IAO_0000030> (information content entity)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000000> "root node"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0000000> (rehabilitation therapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000000> "A therapeutic procedure whose objective is to improve functioning of parts of the body involved in macro movements and whose current level of functioning are clinically abnormal."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000000> "William R. Hogan"@en)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000000> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000000> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000000> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000000> "2026-02-05T13:47:00Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000000> "rehabilitation therapy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000000> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 
 )
