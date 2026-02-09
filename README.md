@@ -4,7 +4,7 @@
 
 Description: An ontology of physical medicine & rehabilitation, physical therapy, occupational therapy, and speech therapy.
 
-More information can be found at http://obofoundry.org/ontology/rehabo
+<!--- More information can be found at http://obofoundry.org/ontology/rehabo --->
 
 ## Versions
 
@@ -14,7 +14,7 @@ The latest version of the ontology can always be found at:
 
 http://purl.obolibrary.org/obo/rehabo.owl
 
-(note this will not show up until the request has been approved by obofoundry.org)
+(note that this link will not be active until a new ontology request for REHABO is made and then approved by obofoundry.org)
 
 ### Editors' version
 
