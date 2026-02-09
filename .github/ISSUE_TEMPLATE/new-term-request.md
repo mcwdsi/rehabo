@@ -1,7 +1,7 @@
 ---
 name: New term request
 about: Request a new class or property
-title: ''
+title: 'Template for a new term request on the issue tracker'
 labels: new term request
 assignees: ''
 
@@ -27,7 +27,7 @@ The definition should be understandable even for non-specialists. Include a PubM
 
 ## Suggested parent term (REQUIRED)
 
-Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/rehabo). The suggested parent term can be from another ontology, in which case please include the OBO ID of that term.
+Please look in the hierarchy for a proper parent term. The suggested parent term can be from another ontology, in which case please include the OBO ID of that term.
 
 ## Attribution (STRONGLY RECOMMENDED)
 
