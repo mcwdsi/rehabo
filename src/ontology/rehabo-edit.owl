@@ -19,6 +19,8 @@ Annotation(dcterms:license <https://creativecommons.org/public-domain/cc0/>)
 Annotation(dcterms:title "The Rehabilitation Ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000001>))
+Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
@@ -58,6 +60,17 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000000> "2026-02-05T13:47:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000000> "rehabilitation therapy"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000000> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0000001> (physical therapy)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000001> "A rehabilitation therapy that improves functioning by (1) increasing muscle strength, range of motion, flexibility, or balance, or (2) reducing pain, either one through non-invasive manipulations of the body."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000001> "William R. Hogan"@en)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000001> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000001> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000001> "2026-02-10T15:26:28Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000001> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000001> "physical therapy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000001> <http://purl.obolibrary.org/obo/REHABO_0000000>)
 
 
 )
