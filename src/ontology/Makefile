@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                c038f325bbfa4b6704013ba7d27ae7bd655314cea20b73c9f8947b4b39ef3cca
+CONFIG_HASH=                2def92d322ad2d0493e7080efd9b5d9e7ffa83f4a894ae84ee4706a2cc3415ff
 
 
 # ----------------------------------------
@@ -384,10 +384,23 @@ $(SIMPLESEED): $(SRCMERGED) $(ONTOLOGYTERMS)
 	echo "http://www.geneontology.org/formats/oboInOwl#SubsetProperty" >> $@ &&\
 	echo "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty" >> $@
 
+IMPORT_MODULE_TEMPLATE=$(TEMPLATEDIR)/external_import.tsv
+IMPORT_MODULE_SIGNATURE=$(TMPDIR)/external_import_terms.txt
+IMPORT_MODULE=$(IMPORTDIR)/external_import.owl
+$(IMPORT_MODULE): $(IMPORT_MODULE_TEMPLATE) | $(TMPDIR)
+	$(ROBOT) template --template $< \
+ 		--ontology-iri "$(ONTBASE)/external_import.owl" \
+  		convert -f ofn \
+  		--output $@
+
+$(IMPORT_MODULE_SIGNATURE): $(IMPORT_MODULE) | $(TMPDIR)
+	$(ROBOT) query -f csv -i $< --query ../sparql/terms.sparql $@.tmp &&\
+	cat $@.tmp | sort | uniq >  $@
+
 # seed.txt contains all entities to import in addition to those defined
 # in the individual _terms.txt files.
 IMPORTSEED = $(TMPDIR)/seed.txt
-$(IMPORTSEED): $(PRESEED) | $(TMPDIR)
+$(IMPORTSEED): $(PRESEED) $(IMPORT_MODULE_SIGNATURE) | $(TMPDIR)
 	cat $^ | sort | uniq > $@
 
 T_IMPORTSEED = --term-file $(IMPORTSEED)

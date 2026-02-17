@@ -40,5 +40,6 @@ robot_report:
   custom_profile: TRUE
   report_on:
     - edit
+use_custom_import_module: true
 workflows:
   ["docs"]
