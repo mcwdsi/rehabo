@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                c038f325bbfa4b6704013ba7d27ae7bd655314cea20b73c9f8947b4b39ef3cca
+CONFIG_HASH=                abdf6ae7e7d10db048b83c671d0c31f385e2be2a2c8ebae7b8c9530cad2c05c7
 
 
 # ----------------------------------------
@@ -44,7 +44,7 @@ EXTENDED_PREFIX_MAP=        $(TMPDIR)/obo.epm.json
 COMPONENTSDIR =             components
 ROBOT_PROFILE =             profile.txt
 REPORT_FAIL_ON =            ERROR
-REPORT_LABEL =              -l true
+REPORT_LABEL =              
 REPORT_PROFILE_OPTS =       --profile $(ROBOT_PROFILE)
 OBO_FORMAT_OPTIONS =        --clean-obo "strict drop-untranslatable-axioms"
 SPARQL_VALIDATION_CHECKS =  owldef-self-reference iri-range label-with-iri multiple-replaced_by 
@@ -230,8 +230,8 @@ all_mappings: $(MAPPING_FILES)
 # QC Reports & Utilities
 # ----------------------------------------
 
-OBO_REPORT =  $(SRC)-obo-report
-ALIGNMENT_REPORT =  $(SRC)-align-report
+OBO_REPORT =  rehabo-base.owl-obo-report $(SRC)-obo-report
+ALIGNMENT_REPORT =  rehabo-base.owl-align-report $(SRC)-align-report
 REPORTS = $(OBO_REPORT)
 REPORT_FILES = $(patsubst %, $(REPORTDIR)/%.tsv, $(REPORTS))
 
@@ -263,10 +263,11 @@ validate_profile_%: $(REPORTDIR)/validate_profile_owl2dl_%.txt
 
 SPARQL_VALIDATION_QUERIES = $(foreach V,$(SPARQL_VALIDATION_CHECKS),$(SPARQLDIR)/$(V)-violation.sparql)
 
-sparql_test:  $(SRCMERGED) | $(REPORTDIR)
+sparql_test:  rehabo-base.owl | $(REPORTDIR)
 ifneq ($(SPARQL_VALIDATION_QUERIES),)
   
-	$(ROBOT) verify -i $(SRCMERGED) --queries $(SPARQL_VALIDATION_QUERIES) -O $(REPORTDIR)
+  
+	$(ROBOT) verify -i rehabo-base.owl --queries $(SPARQL_VALIDATION_QUERIES) -O $(REPORTDIR)
 endif
 
 # ----------------------------------------
@@ -274,10 +275,10 @@ endif
 # ----------------------------------------
 
 $(REPORTDIR)/$(SRC)-obo-report.tsv: $(SRCMERGED) | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/REHABO_ --base-iri $(URIBASE)/rehabo --print 5 -o $@
 
 $(REPORTDIR)/%-obo-report.tsv: % | $(REPORTDIR)
-	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --print 5 -o $@
+	$(ROBOT) report -i $< $(REPORT_LABEL) $(REPORT_PROFILE_OPTS) --fail-on $(REPORT_FAIL_ON) --base-iri $(URIBASE)/REHABO_ --base-iri $(URIBASE)/rehabo --print 5 -o $@
 
 check_for_robot_updates:	
 	@cut -f2 "/tools/templates/src/ontology/profile.txt" | sort > $(TMPDIR)/sorted_tsv2.txt
@@ -384,15 +385,28 @@ $(SIMPLESEED): $(SRCMERGED) $(ONTOLOGYTERMS)
 	echo "http://www.geneontology.org/formats/oboInOwl#SubsetProperty" >> $@ &&\
 	echo "http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty" >> $@
 
+IMPORT_MODULE_TEMPLATE=$(TEMPLATEDIR)/external_import.tsv
+IMPORT_MODULE_SIGNATURE=$(TMPDIR)/external_import_terms.txt
+IMPORT_MODULE=$(IMPORTDIR)/external_import.owl
+$(IMPORT_MODULE): $(IMPORT_MODULE_TEMPLATE) | $(TMPDIR)
+	$(ROBOT) template --template $< \
+ 		--ontology-iri "$(ONTBASE)/external_import.owl" \
+  		convert -f ofn \
+  		--output $@
+
+$(IMPORT_MODULE_SIGNATURE): $(IMPORT_MODULE) | $(TMPDIR)
+	$(ROBOT) query -f csv -i $< --query ../sparql/terms.sparql $@.tmp &&\
+	cat $@.tmp | sort | uniq >  $@
+
 # seed.txt contains all entities to import in addition to those defined
 # in the individual _terms.txt files.
 IMPORTSEED = $(TMPDIR)/seed.txt
-$(IMPORTSEED): $(PRESEED) | $(TMPDIR)
+$(IMPORTSEED): $(PRESEED) $(IMPORT_MODULE_SIGNATURE) | $(TMPDIR)
 	cat $^ | sort | uniq > $@
 
 T_IMPORTSEED = --term-file $(IMPORTSEED)
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 OMO:0002000 
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000116 IAO:0000111 oboInOwl:hasDbXref rdfs:comment 
 
 # ----------------------------------------
 # Import modules

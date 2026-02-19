@@ -7,11 +7,89 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rehabo/imports/omrse_import.owl>
-<http://purl.obolibrary.org/obo/rehabo/releases/2026-02-03/imports/omrse_import.owl>
+<http://purl.obolibrary.org/obo/rehabo/releases/2026-02-17/imports/omrse_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse.owl>)
-Annotation(owl:versionInfo "2026-02-03")
+Annotation(owl:versionInfo "2026-02-17")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000072>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002068>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000013> (physician role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000013> "A health care role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000013> "Mathias Brochhausen"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000013> "physician role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000013> <http://purl.obolibrary.org/obo/OMRSE_00000300>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000072> (physiatrist role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000072> "A physician role that is created by training and certification in rehabilitation/physical medicine and that is realized by the provision of or supervising of the provision of rehabilitation or physical therapy to a patient."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000072> "Amanda Hicks"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000072> "Definition updated May 5, 2016. Original definitions was, a health care role borne by a human being and realized by training and certification in rehabilitation medicine."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000072> "physiatrist role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000072> <http://purl.obolibrary.org/obo/OMRSE_00000013>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000300> (institutional health care provider role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000300> "A human role within an organization that itself bears a healthcare provider organization role."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000300> "Matthew Diller"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000300> "institutional health care provider role"@en)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00002062> (concretization-utilization process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00002062> "Process in which some participant utilizes some specifically dependent continuant as a concretization of some generically dependent continuant."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00002062> "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00002062> "Instances include any process that brings it about that some specifically dependent continuant begins to stand in a concretization relation to some generically dependent continuant, as well as any process in which someone makes use of a pre-established concretization relation. To be clear, instances do not include using concretizations of words or letters for purposes that do not make use of the concretization relations in which they stand (for example, hanging up a sign in a foreign language as a decoration because one likes the colors, despite having no idea what the sign says)."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00002062> "Instances include, but are not limited to, processes that bring about cognitive concretizations."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00002062> "concretization-utilization process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002062> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00002063> (linguistic concretization-utilization process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00002063> "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00002063> "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00002063> "linguistic concretization-utilization process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002063> <http://purl.obolibrary.org/obo/OMRSE_00002062>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00002064> (concretization-interpretation process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00002064> "Process in which some participant infers that some particular specifically dependent continuant stands in the concretization relation to some particular generically dependent continuant."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00002064> "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00002064> "The interpretation need not be accurate. It may even be the case that the specifically dependent continuant has not previously concretized anything."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00002064> "concretization-interpretation process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002064> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00002065> (linguistic concretization-interpretation process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00002065> "A concretization-interpretation process in which the specifically dependent continuant is inferred to concretize the generically dependent continuant  in a way that makes use of some language."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00002065> "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00002065> "linguistic concretization-interpretation process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002065> <http://purl.obolibrary.org/obo/OMRSE_00002064>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00002068> (communication)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00002068> "A process in which some participant shares some generically dependent continuant with some other participant. The former utilizes some specifically dependent continuant that concretizes the generically dependent continuant intended to be shared, while the latter interprets that specifically dependent continuant to concretize some particular generically dependent continuant, aiming to accurately infer the other participant’s intent."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00002068> "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00002068> "For example, if you tell someone, “It is raining,” you produce sounds that have patterns that concretize information about the weather. Your utilization of that concretization is part of the communication. When the other person hears you, they interpret those patterns to concretize something, which may or may not be the same as what you intended to convey. In other words, they interpret the sounds you produce to have meanings associated with them, and that interpretation process is another part of the communication. If a process does not have a part of each type, it is not a communication."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00002068> "The interpretation need not correspond exactly to what was intended by the other participant."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00002068> "The term 'participant' in the definition need not refer to a human agent."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00002068> "communication"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002068> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 
 )

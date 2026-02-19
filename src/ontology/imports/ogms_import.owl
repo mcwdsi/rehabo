@@ -7,11 +7,39 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rehabo/imports/ogms_import.owl>
-<http://purl.obolibrary.org/obo/rehabo/releases/2026-02-03/imports/ogms_import.owl>
+<http://purl.obolibrary.org/obo/rehabo/releases/2026-02-17/imports/ogms_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl>)
-Annotation(owl:versionInfo "2026-02-03")
+Annotation(owl:versionInfo "2026-02-17")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000090>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000097>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000090> (treatment)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000090> "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000090> "Albert Goldfain")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000090> "treatment")
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000097> (health care encounter)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000097> "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000097> "Albert Goldfain")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000097> "health care encounter")
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000112> (therapeutic procedure)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000112> "A treatment whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder or pathological process.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000112> "therapeutic procedure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000112> <http://purl.obolibrary.org/obo/OGMS_0000090>)
 
 
 )

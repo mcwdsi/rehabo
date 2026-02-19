@@ -14,6 +14,9 @@ Import(<http://purl.obolibrary.org/obo/rehabo/imports/ogms_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/omrse_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/ro_import.owl>)
+Annotation(dcterms:contributor <https://orcid.org/0009-0001-9103-9263>)
+Annotation(dcterms:contributor <https://orcid.org/0009-0004-2778-114X>)
+Annotation(dcterms:creator <https://orcid.org/0000-0002-9881-1017>)
 Annotation(dcterms:description "An ontology of physical medicine & rehabilitation, physical therapy, occupational therapy, and speech therapy.")
 Annotation(dcterms:license <https://creativecommons.org/public-domain/cc0/>)
 Annotation(dcterms:title "The Rehabilitation Ontology")
@@ -51,6 +54,18 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
 
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000090> (treatment)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000090> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000097> (health care encounter)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000097> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000300> (institutional health care provider role)
+
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000300> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
 # Class: <http://purl.obolibrary.org/obo/REHABO_0000000> (rehabilitation therapy)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000000> "A therapeutic procedure whose objective is to improve functioning of parts of the body involved in macro movements and whose current level of functioning are clinically abnormal."@en)
@@ -60,7 +75,7 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000000> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000000> "2026-02-05T13:47:00Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000000> "rehabilitation therapy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000000> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000000> <http://purl.obolibrary.org/obo/OGMS_0000112>)
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0000001> (physical therapy)
 
