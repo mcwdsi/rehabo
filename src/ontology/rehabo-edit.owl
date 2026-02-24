@@ -70,6 +70,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000300> <http://purl.obolibra
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000000> "A therapeutic procedure whose objective is to improve functioning of parts of the body involved in macro movements and whose current level of functioning are clinically abnormal."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000000> "William R. Hogan"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0000000> <https://github.com/mcwdsi/rehabo/issues/1>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000000> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000000> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000000> <https://orcid.org/0009-0004-2778-114X>)
@@ -81,6 +82,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000000> <http://purl.obolibra
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000001> "A rehabilitation therapy that improves functioning by (1) increasing muscle strength, range of motion, flexibility, or balance, or (2) reducing pain, either one through non-invasive manipulations of the body."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000001> "William R. Hogan"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0000001> <https://github.com/mcwdsi/rehabo/issues/9>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000001> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000001> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000001> "2026-02-10T15:26:28Z"^^xsd:dateTime)
@@ -92,6 +94,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000001> <http://purl.obolibra
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000002> "A rehabilitation therapy whose objective is to improve functioning in activities of daily living or occupational tasks, often using supportive devices in contact with the body as aids or through alterations in the patient’s home or work environment."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000002> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0000002> <https://github.com/mcwdsi/rehabo/issues/11>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000002> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000002> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000002> "2026-02-10T16:00:00Z"^^xsd:dateTime)
