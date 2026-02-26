@@ -29,6 +29,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000008>))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -170,6 +171,18 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000007> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000007> "physical therapy encounter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000007> <http://purl.obolibrary.org/obo/OGMS_0000097>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0000008> (occupational therapy encounter)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000008> "A health care encounter that realizes the occupational therapist role of a participant and has the provision of occupational therapy as a part."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000008> "Manoj Purohit"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0000008> <https://github.com/mcwdsi/rehabo/issues/18>)
+AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0000008> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0000008> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000008> "2026-02-26T19:18:32Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000008> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000008> "occupational therapy encounter"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000008> <http://purl.obolibrary.org/obo/OGMS_0000097>)
 
 
 )
