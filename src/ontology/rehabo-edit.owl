@@ -30,6 +30,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000009>))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -183,6 +184,20 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000008> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000008> "occupational therapy encounter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000008> <http://purl.obolibrary.org/obo/OGMS_0000097>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0000009> (meta-cognitive strategy training)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000009> "A therapeutic procedure that actively engages patients in identifying the key bodily-functional limitations they wish to work on, self-assessing those limitations, developing objective specifications for addressing those limitations, developing new action specifications to achieve those objectives, and then implementing those actions towards those objectives."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000009> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0000009> <https://github.com/mcwdsi/rehabo/issues/23>)
+AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0000009> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0000009> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000009> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0000009> "strategy training"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0000009> "It is frequently if not typically used in patients with cognitive deficits, for example following stroke."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0000009> "It typically is a supplement to rehabilitation therapy, not a substitute or subtype of it."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000009> "meta-cognitive strategy training"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000009> <http://purl.obolibrary.org/obo/OGMS_0000112>)
 
 
 )
