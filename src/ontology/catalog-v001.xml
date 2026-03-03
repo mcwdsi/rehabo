@@ -6,5 +6,6 @@
     <uri name="http://purl.obolibrary.org/obo/rehabo/imports/omo_import.owl" uri="imports/omo_import.owl" />
     <uri name="http://purl.obolibrary.org/obo/rehabo/imports/ogms_import.owl" uri="imports/ogms_import.owl" />
     <uri name="http://purl.obolibrary.org/obo/rehabo/imports/omrse_import.owl" uri="imports/omrse_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/rehabo/imports/iao_import.owl" uri="imports/iao_import.owl" />
   </group>
 </catalog>
