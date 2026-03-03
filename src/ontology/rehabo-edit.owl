@@ -30,6 +30,10 @@ Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000009>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-9881-1017>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0001-9103-9263>))
+Declaration(NamedIndividual(<https://orcid.org/0009-0004-2778-114X>))
 Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -183,6 +187,44 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000008> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000008> "occupational therapy encounter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000008> <http://purl.obolibrary.org/obo/OGMS_0000097>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0000009> (occupational therapist role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000009> "An institutional health care role that is created by training and certification in occupational therapy and that is realized by the provision of occupational therapy.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000009> "William R. Hogan"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0000009> <https://github.com/mcwdsi/rehabo/issues/20>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000009> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000009> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000009> "2026-02-27T20:53:44Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000009> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000009> "occupational therapist role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000009> <http://purl.obolibrary.org/obo/OMRSE_00000300>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0002-9881-1017> (William R. Hogan)
+
+AnnotationAssertion(dcterms:created <https://orcid.org/0000-0002-9881-1017> "2026-02-27T20:41:55Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <https://orcid.org/0000-0002-9881-1017> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-9881-1017> "William R. Hogan"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/BFO_0000030> <https://orcid.org/0000-0002-9881-1017>)
+
+# Individual: <https://orcid.org/0009-0001-9103-9263> (Manoj Purohit)
+
+AnnotationAssertion(dcterms:created <https://orcid.org/0009-0001-9103-9263> "2026-02-27T20:45:55Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <https://orcid.org/0009-0001-9103-9263> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0001-9103-9263> "Manoj Purohit"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/BFO_0000030> <https://orcid.org/0009-0001-9103-9263>)
+
+# Individual: <https://orcid.org/0009-0004-2778-114X> (Maxwell Pena)
+
+AnnotationAssertion(dcterms:created <https://orcid.org/0009-0004-2778-114X> "2026-02-27T20:45:08Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <https://orcid.org/0009-0004-2778-114X> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:label <https://orcid.org/0009-0004-2778-114X> "Maxwell Pena"@en)
+ClassAssertion(<http://purl.obolibrary.org/obo/BFO_0000030> <https://orcid.org/0009-0004-2778-114X>)
 
 
 )
