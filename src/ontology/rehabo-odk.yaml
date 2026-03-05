@@ -26,6 +26,7 @@ import_group:
     - rdfs:comment
   products:
     - id: ro
+      module_type: mirror
       mirror_from: http://purl.obolibrary.org/obo/ro/core.owl
     - id: bfo
       module_type: mirror
@@ -35,6 +36,9 @@ import_group:
       module_type: filter
       make_base: true
     - id: omrse
+      module_type: filter
+      make_base: true
+    - id: iao
       module_type: filter
       make_base: true
 license: https://creativecommons.org/public-domain/cc0/
