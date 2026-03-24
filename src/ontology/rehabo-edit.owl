@@ -227,7 +227,7 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010001> "2026-03-18T03:39:15Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010001> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010001> "physical therapist role"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010001> <http://purl.obolibrary.org/obo/REHABO_0000009>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010001> <http://purl.obolibrary.org/obo/OMRSE_00000300>)
 
 
 ############################
