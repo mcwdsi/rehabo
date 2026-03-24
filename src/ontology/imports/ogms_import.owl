@@ -7,10 +7,12 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rehabo/imports/ogms_import.owl>
-<http://purl.obolibrary.org/obo/rehabo/releases/2026-03-02/imports/ogms_import.owl>
+<http://purl.obolibrary.org/obo/rehabo/releases/2026-03-24/imports/ogms_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl>)
-Annotation(owl:versionInfo "2026-03-02")
+Annotation(owl:versionInfo "2026-03-24")
 
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000090>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000097>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000112>))
@@ -22,6 +24,12 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 ############################
 #   Classes
 ############################
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000060> "Albert Goldfain")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000060> "bodily process")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
 
 # Class: <http://purl.obolibrary.org/obo/OGMS_0000090> (treatment)
 

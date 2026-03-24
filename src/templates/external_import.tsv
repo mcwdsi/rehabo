@@ -12,6 +12,7 @@ OMRSE:00002064	owl:Class
 OMRSE:00002065	owl:Class
 OMRSE:00002062	owl:Class
 OMRSE:00002063	owl:Class
+OGMS:0000060	owl:Class
 IAO:0000136	owl:ObjectProperty
 IAO:0000219	owl:ObjectProperty
 IAO:0000030	owl:Class
