@@ -9,7 +9,7 @@ assignees: ''
 
 For new term requests, please provide the following information:
 
-## Preferred term label (REQUIRED)
+# Preferred class label (REQUIRED)
 
 This will be the rdfs:label for the class. (e.g., Asplenia)
 
@@ -25,7 +25,7 @@ will not be counted as duplicate exact synonyms in ROBOT reports
 
 The definition should be understandable even for non-specialists. Include a PubMed ID to refer to any relevant article that provides additional information about the suggested term.
 
-## Suggested parent term (REQUIRED)
+## Suggested parent class (REQUIRED)
 
 Please look in the hierarchy for a proper parent term. The suggested parent term can be from another ontology, in which case please include the OBO ID of that term.
 
