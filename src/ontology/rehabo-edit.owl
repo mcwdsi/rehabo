@@ -289,20 +289,19 @@ SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011003> <http://purl.obolibra
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011004> (joint function)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011004> "A function inhering in a joint"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011004> "A function inhering in a joint."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011004> "Maxwell Pena"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011004> <https://github.com/mcwdsi/rehabo/issues/40>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011004> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011004> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011004> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0011004> "function of a joint"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0011004> "will not be counted as duplicate exact synonyms in ROBOT reports"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011004> "joint function"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011004> <http://purl.obolibrary.org/obo/BFO_0000034>)
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011005> (muscle function)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011005> "A function inhering in a muscle"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011005> "A function inhering in a muscle."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011005> "Maxwell Pena"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011005> <https://github.com/mcwdsi/rehabo/issues/40>)
 AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0011005> <https://orcid.org/0000-0002-9881-1017>)
@@ -310,7 +309,6 @@ AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_00110
 AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/REHABO_0011005> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011005> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0011005> "function of a muscle"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0011005> "will not be counted as duplicate exact synonyms in ROBOT reports"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011005> "muscle function"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011005> <http://purl.obolibrary.org/obo/BFO_0000034>)
 
@@ -322,7 +320,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.ob
 AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0011006> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0011006> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011006> <https://orcid.org/0009-0004-2778-114X>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0011006> "will not be counted as duplicate exact synonyms in ROBOT reports"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011006> "range of motion function of a joint"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011006> <http://purl.obolibrary.org/obo/REHABO_0011004>)
 
