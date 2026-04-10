@@ -7,14 +7,16 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rehabo/imports/omrse_import.owl>
-<http://purl.obolibrary.org/obo/rehabo/releases/2026-03-02/imports/omrse_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse.owl>)
-Annotation(owl:versionInfo "2026-03-02")
+<http://purl.obolibrary.org/obo/rehabo/releases/2026-04-10/imports/omrse_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omrse/releases/2026-04-07/omrse.owl>)
+Annotation(owl:versionInfo "2026-04-10")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000013>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000300>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000309>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000310>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002062>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002063>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002064>))
@@ -24,6 +26,8 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 
 
@@ -54,6 +58,31 @@ AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.o
 AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00000300> "William R. Hogan"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/OMRSE_00000300> "institutional healthcare provider role"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000300> "institutional health care provider role"@en)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000309> (gesturing)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000309> "A concretization utilization process whereby the participant moves one or more of its material parts in such a way that the part(s) moved bear one or more new qualities, possibly in succession, that collectively concretize the generically dependent continuant."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000309> "William R. Hogan"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OMRSE_00000309> "2026-03-21T18:13:08Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/OMRSE_00000309> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/OMRSE_00000309> "gesture"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000309> "Note that the qualities are by and large shape qualities."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000309> "Note that this excludes vocalization, because in that case, it is not the qualities of the parts moved--but qualities of the air--that concretize the generically dependent continuant."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000309> "This is separate from “gestural communication”. You can fist pump, signal touchdown, and throw up your hands in frustration when alone or otherwise not intending to communicate, and yet you have concretized a GDC and thus gestured."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000309> "gesturing"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000309> <http://purl.obolibrary.org/obo/OMRSE_00002062>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00000310> (purely gestural communication)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000310> "A communication carried out only through gesturing."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000310> "William R. Hogan"@en)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OMRSE_00000310> "2026-03-21T18:18:14Z"^^xsd:dateTime)
+AnnotationAssertion(<http://purl.org/dc/terms/creator> <http://purl.obolibrary.org/obo/OMRSE_00000310> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000310> "Differs from gesturing because now we add the fact that there is another entity that is doing a concretization interpretation process."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000310> "Excludes vocalization and writing. It could include gesturing the letters, though. For example, the Y-M-C-A motions without vocalizing “why—emm—see—ayy” would be gestural communication."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000310> "Most linguistic communication with a human speaker that occurs via vocalization also includes gesturing. Here we are concerned with gesture-only communication."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000310> "purely gestural communication"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000310> <http://purl.obolibrary.org/obo/OMRSE_00002068>)
 
 # Class: <http://purl.obolibrary.org/obo/OMRSE_00002062> (concretization-utilization process)
 
