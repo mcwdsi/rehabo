@@ -247,6 +247,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0000011> "active assisted ROM process"@en)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000011> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000011> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000011> "2026-03-25T14:10:58Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000011> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0000011> "The additional force is typically applied by another person/organism, an assistive device, a separate limb of the same organism, or gravity."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000011> "active assisted range of motion process"@en)
