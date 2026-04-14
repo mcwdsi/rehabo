@@ -50,6 +50,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011014>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011018>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-9881-1017>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0001-9103-9263>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0004-2778-114X>))
@@ -448,6 +449,20 @@ AnnotationAssertion(dce:creator <http://purl.obolibrary.org/obo/REHABO_0011017> 
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011017> "Max Pena")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011017> "power exercise"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011017> <http://purl.obolibrary.org/obo/REHABO_0011011>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0011018> (task object role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/REHABO_0011018> "toothbrush, hairbrush, fork, spoon, cup, book, door handle"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011018> "The role of an object during rehabilitation therapy that is realized by the patient performing activities that realize a function of the object, such that the patient increasingly improves their capability(ies) to use an object of a similar type."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011018> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011018> <https://github.com/mcwdsi/rehabo/issues/45>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011018> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011018> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011018> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011018> "Max Pena")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0011018> "task object"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011018> "task object role"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011018> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 
 ############################
