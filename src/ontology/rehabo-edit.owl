@@ -43,6 +43,13 @@ Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011006>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011013>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011014>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011017>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-9881-1017>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0001-9103-9263>))
 Declaration(NamedIndividual(<https://orcid.org/0009-0004-2778-114X>))
@@ -65,6 +72,7 @@ AnnotationAssertion(rdfs:label dcterms:license "license")
 # Annotation Property: dcterms:title (title)
 
 AnnotationAssertion(rdfs:label dcterms:title "title")
+
 
 
 
@@ -111,6 +119,7 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000001> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000001> "physical therapy"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000001> <http://purl.obolibrary.org/obo/REHABO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000001> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/REHABO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/REHABO_0010001>)))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0000002> (occupational therapy)
 
@@ -123,6 +132,7 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000002> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000002> "occupational therapy"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000002> <http://purl.obolibrary.org/obo/REHABO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000002> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/REHABO_0000000> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/REHABO_0000009>)))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0000003> (rehabilitation therapy cue)
 
@@ -175,6 +185,7 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000006> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000006> "rehabilitation encounter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000006> <http://purl.obolibrary.org/obo/OGMS_0000097>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000006> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OGMS_0000097> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/OMRSE_00000072>)))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0000007> (physical therapy encounter)
 
@@ -187,6 +198,7 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000007> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000007> "physical therapy encounter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000007> <http://purl.obolibrary.org/obo/OGMS_0000097>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000007> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OGMS_0000097> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/REHABO_0000001>)))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0000008> (occupational therapy encounter)
 
@@ -199,6 +211,7 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000008> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000008> "occupational therapy encounter"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000008> <http://purl.obolibrary.org/obo/OGMS_0000097>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000008> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/OGMS_0000097> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/REHABO_0000002>)))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0000009> (occupational therapist role)
 
@@ -229,6 +242,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000010> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/REHABO_0000011> (active assisted range of motion process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000011> "A range of motion exercise that is carried out by the organism and assisted by a force in addition to the contraction of the muscles that move the joint."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0000011> "Maxwell Pena"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0000011> <https://github.com/mcwdsi/rehabo/issues/36>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0000011> "active assisted ROM process"@en)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000011> <https://orcid.org/0009-0001-9103-9263>)
@@ -254,10 +268,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010001> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011001> (range of motion process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011001> "A joint motion all the way to one extreme of apposition of the bones in the joint that is permitted by any ligaments, tendons, capsules, and muscles that are either part of the joint or connected to same."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011001> "Maxwell Pena"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011001> <https://github.com/mcwdsi/rehabo/issues/36>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0011001> "ROM process"@en)
-AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0011001> <https://orcid.org/0000-0002-9881-1017>)
-AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0011001> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011001> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011001> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011001> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011001> "range of motion process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011001> <http://purl.obolibrary.org/obo/OGMS_0000060>)
@@ -265,11 +280,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011001> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011002> (active range of motion process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011002> "A range of motion process effected solely by the intentional control of the organism through contraction of the muscles that move the joint."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011002> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011002> "Maxwell Pena"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011002> <https://github.com/mcwdsi/rehabo/issues/36>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0011002> "active ROM process"@en)
-AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0011002> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011002> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011002> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011002> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011002> "active range of motion process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011002> <http://purl.obolibrary.org/obo/REHABO_0011001>)
@@ -277,11 +292,11 @@ SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011002> <http://purl.obolibra
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011003> (passive range of motion process)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011003> "A range of motion process carried out by assistance from a force other than the muscles that move the joint and that pushes the joint to a greater extreme than is typically possible by the organism on its own."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011003> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011003> "Maxwell Pena"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011003> <https://github.com/mcwdsi/rehabo/issues/36>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0011003> "passive ROM process"@en)
-AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_0011003> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011003> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011003> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011003> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0011003> "The force is typically applied by another person/organism, an assistive device, a separate limb of the same organism, or gravity."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011003> "passive range of motion process"@en)
@@ -322,6 +337,7 @@ AnnotationAssertion(dce:contributor <http://purl.obolibrary.org/obo/REHABO_00110
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011006> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011006> "range of motion function of a joint"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011006> <http://purl.obolibrary.org/obo/REHABO_0011004>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/REHABO_0011001>))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011007> (power of a muscle)
 
@@ -347,6 +363,101 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0011008> "Like all functions, there are degrees of functioning. So increasing strength is an increased function of a muscle."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011008> "strength of a muscle"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011008> <http://purl.obolibrary.org/obo/REHABO_0011005>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0011011> (physical exercise)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011011> "A bodily process that is intentional, has an objective of increasing the functioning of some part(s) of the body, is repetitive, and has one or more components of the musculoskeletal system as participants."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011011> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011011> <https://github.com/mcwdsi/rehabo/issues/41>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011011> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011011> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0011011> "2026-04-14T12:00:00"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011011> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/REHABO_0011011> "excersise"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0011011> "Exercise is always goal directed, and that goal or objective is the improvement of the functioning of some part of the body. That part of the body is not always the musculoskeletal system. For example, cardio exercise improves the functioning of the heart and other components of the cardiovascular system. Plus, many exercises improve proprioception and cerebellar and other nervous system functions."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0011011> "Exercise is repetitive, and the repetition is typically if not always required to realize the planned improvement in functioning."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0011011> "Isometric exercises like planking rule out movement of the body, or a part of it, as a requirement."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0011011> "Passive ROM exercises rule out active muscle contraction as a requirement."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0011011> "We do not capture “mental exercises” here intentionally."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011011> "physical exercise"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011011> <http://purl.obolibrary.org/obo/OGMS_0000060>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011011> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000017> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0000104>))))
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0011012> (range of motion exercise)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011012> "A physical exercise whose objective is to maintain the range of motion function of a joint or improve it towards clinically normal (when not currently normal) and whose repetitions are range of motion processes"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011012> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011012> <https://github.com/mcwdsi/rehabo/issues/41>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0011012> "ROM exercise"@en)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011012> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011012> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0011012> "2026-04-14T12:00:00"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011012> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011012> "range of motion exercise"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011012> <http://purl.obolibrary.org/obo/REHABO_0011011>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0011013> (active range of motion exercise)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011013> "A range of motion exercise whose repetitions are active range of motion processes."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011013> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011013> <https://github.com/mcwdsi/rehabo/issues/41>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0011013> "active ROM exercise"@en)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011013> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011013> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0011013> "2026-04-14T12:00:00"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011013> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011013> "active range of motion exercise"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011013> <http://purl.obolibrary.org/obo/REHABO_0011012>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0011014> (passive range of motion exercise)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011014> "A range of motion exercise whose repetitions are passive range of motion processes."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011014> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011014> <https://github.com/mcwdsi/rehabo/issues/41>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0011014> "passive ROM exercise"@en)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011014> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011014> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0011014> "2026-04-14T12:00:00"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011014> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011014> "passive range of motion exercise"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011014> <http://purl.obolibrary.org/obo/REHABO_0011012>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0011015> (active assisted range of motion exercise)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011015> "A range of motion exercise whose repetitions are active assisted range of motion processes."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011015> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011015> <https://github.com/mcwdsi/rehabo/issues/41>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OMO_0003012> <http://purl.obolibrary.org/obo/REHABO_0011015> "active assisted ROM exercise"@en)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011015> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011015> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0011015> "2026-04-14T12:00:00"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011015> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011015> "active assisted range of motion exercise"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011015> <http://purl.obolibrary.org/obo/REHABO_0011012>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0011016> (strength exercise)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011016> "A physical exercise whose objective is to increase the strength of one or more muscles."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011016> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011016> <https://github.com/mcwdsi/rehabo/issues/41>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011016> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011016> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0011016> "2026-04-14T12:00:00"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011016> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011016> "strength exercise"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011016> <http://purl.obolibrary.org/obo/REHABO_0011011>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0011017> (power exercise)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0011017> "A physical exercise whose objective is to increase the power of one or more muscles."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0011017> "Maxwell Pena"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011017> <https://github.com/mcwdsi/rehabo/issues/41>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011017> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011017> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0011017> "2026-04-14T12:00:00"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011017> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011017> "power exercise"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011017> <http://purl.obolibrary.org/obo/REHABO_0011011>)
 
 
 ############################
