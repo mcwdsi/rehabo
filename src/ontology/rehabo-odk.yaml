@@ -41,6 +41,10 @@ import_group:
     - id: iao
       module_type: filter
       make_base: true
+    - id: uberon
+      module_type: filter 
+      mirror_from: http://purl.obolibrary.org/obo/uberon/subsets/human-view.owl
+      make_base: true
 license: https://creativecommons.org/public-domain/cc0/
 documentation:
   documentation_system: mkdocs

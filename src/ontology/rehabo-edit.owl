@@ -15,6 +15,7 @@ Import(<http://purl.obolibrary.org/obo/rehabo/imports/ogms_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/omrse_import.owl>)
 Import(<http://purl.obolibrary.org/obo/rehabo/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/rehabo/imports/uberon_import.owl>)
 Annotation(dcterms:contributor <https://orcid.org/0009-0001-9103-9263>)
 Annotation(dcterms:contributor <https://orcid.org/0009-0004-2778-114X>)
 Annotation(dcterms:creator <https://orcid.org/0000-0002-9881-1017>)
@@ -313,6 +314,7 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011004> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0011004> "function of a joint"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011004> "joint function"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/REHABO_0011004> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000034> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0000982>)))
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011004> <http://purl.obolibrary.org/obo/BFO_0000034>)
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011005> (muscle function)
@@ -322,7 +324,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0011005> <https://github.com/mcwdsi/rehabo/issues/40>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011005> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011005> <https://orcid.org/0009-0001-9103-9263>)
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011005> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011005> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0011005> "function of a muscle"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011005> "muscle function"@en)
@@ -472,6 +473,10 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_00110
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0011018> "task object"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011018> "task object role"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011018> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000061> (anatomical structure)
+
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
 
 ############################
