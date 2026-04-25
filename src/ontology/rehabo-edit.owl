@@ -35,6 +35,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000010>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0000012>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0010001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011002>))
@@ -255,6 +256,18 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0000011>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000011> "active assisted range of motion process"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000011> <http://purl.obolibrary.org/obo/REHABO_0011001>)
 
+# Class: <http://purl.obolibrary.org/obo/REHABO_0000012> (joint motion)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0000012> "A bodily process whereby the bones articulated by a joint change relative positions and orientations with respect to one another."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0000012> <https://github.com/mcwdsi/rehabo/issues/49>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000012> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0000012> <https://orcid.org/0009-0004-2778-114X>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0000012> "2026-04-25T19:37:00Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000012> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0000012> "moving of joint"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000012> "joint motion"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000012> <http://purl.obolibrary.org/obo/OGMS_0000060>)
+
 # Class: <http://purl.obolibrary.org/obo/REHABO_0010001> (physical therapist role)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010001> "An institutional health care role that is created by training and certification in physical therapy and that is realized by the provision of physical therapy."@en)
@@ -277,7 +290,7 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011001> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011001> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011001> "range of motion process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011001> <http://purl.obolibrary.org/obo/OGMS_0000060>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011001> <http://purl.obolibrary.org/obo/REHABO_0000012>)
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011002> (active range of motion process)
 
@@ -338,8 +351,8 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0011006> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0011006> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0011006> "range of motion function of a joint"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/REHABO_0011006> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/REHABO_0011004> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/REHABO_0011001>)))
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011006> <http://purl.obolibrary.org/obo/REHABO_0011004>)
-SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0011006> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/REHABO_0011001>))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011007> (power of a muscle)
 
