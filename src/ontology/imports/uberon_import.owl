@@ -7,15 +7,17 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rehabo/imports/uberon_import.owl>
-<http://purl.obolibrary.org/obo/rehabo/releases/2026-04-24/imports/uberon_import.owl>
+<http://purl.obolibrary.org/obo/rehabo/releases/2026-04-26/imports/uberon_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/uberon/releases/2026-04-01/subsets/human-view.owl>)
-Annotation(owl:versionInfo "2026-04-24")
+Annotation(owl:versionInfo "2026-04-26")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000467>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000982>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001016>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001365>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001434>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001469>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001470>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001485>))
@@ -36,6 +38,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003699>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003839>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003840>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0003841>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004770>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0004905>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0006658>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0007164>))
@@ -83,6 +86,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011132>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011133>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011139>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011166>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011216>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011265>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011868>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0011869>))
@@ -110,6 +114,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0016426>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0016882>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0016884>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0034921>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0034925>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_2002040>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_4200008>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
@@ -152,6 +157,22 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000061> "biological structure")
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CARO:0000003") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0000061> "connected biological structure")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000061> "anatomical structure")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000061> <http://purl.obolibrary.org/obo/UBERON_0000465>)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000465> (material anatomical entity)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0001-9114-8737") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000465> "Anatomical entity that has mass.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "AAO:0010264")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "AEO:0000006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "BILA:0000006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "CARO:0000006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "EHDAA2:0003006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "FMA:67165")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "HAO:0000006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "TAO:0001836")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "TGMA:0001826")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "VHOG:0001721")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0000467> (anatomical system)
 
@@ -249,6 +270,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GO:0050877") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0001016> "neurological system")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001016> "nervous system")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001016> <http://purl.obolibrary.org/obo/UBERON_0000467>)
+DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001016> <http://purl.obolibrary.org/obo/UBERON_0001434>)
 DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001016> <http://purl.obolibrary.org/obo/UBERON_0002204>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001365> (sacro-iliac joint)
@@ -267,6 +289,29 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynony
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001365> "sacro-iliac joint")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001365> <http://purl.obolibrary.org/obo/UBERON_0000061>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001365> <http://purl.obolibrary.org/obo/UBERON_0011107>)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0001434> (skeletal system)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GO_REF:0000034") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "VSAO:0000027") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://dx.plos.org/10.1371/journal.pone.0051070") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0001434> "Anatomical system that is a multi-element, multi-tissue anatomical cluster that consists of the skeleton and the articular system.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "AAO:0000566")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "BTO:0001486")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "CALOHA:TS-1320")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "EFO:0000806")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "EHDAA2:0003168")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "EMAPA:35773")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "FMA:23881")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "MA:0000018")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "NCIT:C12788")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "TAO:0000434")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "VHOG:0001254")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "VSAO:0000027")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "XAO:0003060")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001434> "ZFA:0000434")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0001434> "skeleton system")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "BTO:0001486") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0001434> "Skelettsystem")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001434> "skeletal system")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001434> <http://purl.obolibrary.org/obo/UBERON_0011216>)
+DisjointClasses(<http://purl.obolibrary.org/obo/UBERON_0001434> <http://purl.obolibrary.org/obo/UBERON_0002204>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0001469> (sternoclavicular joint)
 
@@ -656,6 +701,21 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "MA:0002715") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0003841> "paw joint")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0003841> "autopod joint")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0003841> <http://purl.obolibrary.org/obo/UBERON_0003657>)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0004770> (articular system)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "VSAO:0000181") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0004770> "Anatomical system that consists of all the joints of the body.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0004770> "EMAPA:35150")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0004770> "FMA:23878")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0004770> "MA:0003007")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0004770> "SCTID:361827000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0004770> "VSAO:0000181")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FMA:23878") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0004770> "joint system")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FMA:23878") <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/UBERON_0004770> "set of all joints of body")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0004770> "set of all joints")
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FMA:23878") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0004770> "set of joints of body")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0004770> "articular system")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0004770> <http://purl.obolibrary.org/obo/UBERON_0034925>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_0004905> (articulation)
 
@@ -1206,6 +1266,14 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0011166> "
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0011166> <http://purl.obolibrary.org/obo/UBERON_0003840>)
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0011166> <http://purl.obolibrary.org/obo/UBERON_0011139>)
 
+# Class: <http://purl.obolibrary.org/obo/UBERON_0011216> (organ system subdivision)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0002-6601-2165") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0011216> "A subdivision of an anatomical system.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0011216> "FMA:67509")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0011216> "SCTID:91690000")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0011216> "organ system subdivision")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0011216> <http://purl.obolibrary.org/obo/UBERON_0010000>)
+
 # Class: <http://purl.obolibrary.org/obo/UBERON_0011265> (carpometacarpal joint of digit 1)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "Wikipedia:Carpometacarpal_joint#Thumb") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0011265> "A carpometacarpal joint that connects to metacarpal 1.")
@@ -1461,6 +1529,13 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <ht
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "CARO:0020001") <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/UBERON_0034921> "anatomical cluster")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0034921> "multi organ part structure")
 SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0034921> <http://purl.obolibrary.org/obo/UBERON_0010000>)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0034925> (anatomical collection)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0002-6601-2165") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0034925> "A collection of anatomical structures that are alike in terms of their morphology or developmental origin.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/UBERON_0034925> "resolve if this should be a subclass of disconnected anatomical group. Some collections (e.g. the skeleton or skull) are arguably connected")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0034925> "anatomical collection")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0034925> <http://purl.obolibrary.org/obo/UBERON_0000465>)
 
 # Class: <http://purl.obolibrary.org/obo/UBERON_2002040> (inter-coracoid joint)
 
