@@ -376,7 +376,7 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010002> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010002> "2026-06-05T18:31:13Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010002> <https://orcid.org/0009-0001-9103-9263>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010002> "Synonym: medical equipment"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0010002> "medical equipment"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010002> "medical device"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010002> <http://purl.obolibrary.org/obo/BFO_0000030>)
 
@@ -413,7 +413,8 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010005> <https://orcid.org/0009-0004-2778-114X>)
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010005> "2026-06-05T19:59:19Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010005> <https://orcid.org/0009-0001-9103-9263>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010005> "Synonym: dressing assistive device. Related term: dressing aid"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0010005> "dressing aid"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0010005> "dressing assistive device"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010005> "assistive device for donning or removing clothing"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010005> <http://purl.obolibrary.org/obo/REHABO_0010003>)
 
@@ -421,7 +422,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010005> <http://purl.obolibra
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010006> "An object manufactured with the function to enhance an organism's capability to grasp or hold onto other objects."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/REHABO_0010006> "It is not the case that every grasping or holding device is a medical device, so we put them under object. For example, you can buy a reacher at a big box store that is not registered with the FDA."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010006> "Manoj Purphit"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010006> "Manoj Purohit"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0010006> <https://github.com/mcwdsi/rehabo/issues/67>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010006> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010006> <https://orcid.org/0009-0004-2778-114X>)
