@@ -47,6 +47,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0010003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0010004>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0010005>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0010006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0010007>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/REHABO_0011003>))
@@ -430,6 +431,17 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00100
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010006> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010006> "grasping or holding assistive device"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010006> <http://purl.obolibrary.org/obo/BFO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/REHABO_0010007> (wheelchair)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010007> "A locomotion assistive device that (1) supports the body in a seated position, (2) has two or more wheels as part, and (3) whose locomotion function, if realized, is realized by a process that has as part rotating of its wheels."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010007> "Manoj Purohit"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0010007> <https://github.com/mcwdsi/rehabo/issues/69>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010007> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010007> "2026-06-16T03:16:32Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010007> <https://orcid.org/0009-0001-9103-9263>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010007> "wheelchair"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010007> <http://purl.obolibrary.org/obo/REHABO_0010004>)
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0011001> (range of motion process)
 
