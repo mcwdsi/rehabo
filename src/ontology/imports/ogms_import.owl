@@ -1,53 +1,62 @@
 Prefix(:=<http://purl.obolibrary.org/obo/rehabo/imports/ogms_import.owl#>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/rehabo/imports/ogms_import.owl>
-<http://purl.obolibrary.org/obo/rehabo/releases/2026-04-24/imports/ogms_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl>)
-Annotation(owl:versionInfo "2026-04-24")
+<http://purl.obolibrary.org/obo/rehabo/releases/2026-06-22/imports/ogms_import.owl>
+Annotation(zdc:source <http://purl.obolibrary.org/obo/ogms/2021-08-19/ogms.owl>)
+Annotation(owl:versionInfo "2026-06-22")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000060>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000090>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000097>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000112>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(Class(obo:BFO_0000015))
+Declaration(Class(obo:OGMS_0000060))
+Declaration(Class(obo:OGMS_0000090))
+Declaration(Class(obo:OGMS_0000097))
+Declaration(Class(obo:OGMS_0000112))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000117))
+Declaration(AnnotationProperty(zdc:source))
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000060> (bodily process)
+# Class: obo:OGMS_0000060 (bodily process)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000060> "Albert Goldfain")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000060> "bodily process")
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000060> <http://purl.obolibrary.org/obo/BFO_0000015>)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000060 "Albert Goldfain")
+AnnotationAssertion(rdfs:label obo:OGMS_0000060 "bodily process")
+SubClassOf(obo:OGMS_0000060 obo:BFO_0000015)
 
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000090> (treatment)
+# Class: obo:OGMS_0000090 (treatment)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000090> "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000090> "Albert Goldfain")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000090> "treatment")
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000090 "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000090 "Albert Goldfain")
+AnnotationAssertion(rdfs:label obo:OGMS_0000090 "treatment")
 
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000097> (health care encounter)
+# Class: obo:OGMS_0000097 (health care encounter)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000097> "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000097> "Albert Goldfain")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000097> "health care encounter")
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000097 "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OGMS_0000097 "Albert Goldfain")
+AnnotationAssertion(rdfs:label obo:OGMS_0000097 "health care encounter")
 
-# Class: <http://purl.obolibrary.org/obo/OGMS_0000112> (therapeutic procedure)
+# Class: obo:OGMS_0000112 (therapeutic procedure)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000112> "A treatment whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder or pathological process.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000112> "therapeutic procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000112> <http://purl.obolibrary.org/obo/OGMS_0000090>)
+AnnotationAssertion(obo:IAO_0000115 obo:OGMS_0000112 "A treatment whose completion is hypothesized by a health care provider to eliminate a disorder or to alleviate the signs and symptoms of a disorder or pathological process.")
+AnnotationAssertion(rdfs:label obo:OGMS_0000112 "therapeutic procedure"@en)
+SubClassOf(obo:OGMS_0000112 obo:OGMS_0000090)
 
 
 )

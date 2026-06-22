@@ -81,11 +81,9 @@ AnnotationAssertion(rdfs:label dcterms:description "description")
 
 # Annotation Property: dcterms:license (license)
 
-AnnotationAssertion(rdfs:label dcterms:license "license")
 
 # Annotation Property: dcterms:title (title)
 
-AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
