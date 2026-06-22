@@ -12,9 +12,6 @@
 
 		"dcterms": "http://purl.org/dc/terms/",
                 "zdc": "http://purl.org/dc/elements/1.1/",
-		"foaf": "http://xmlns.com/foaf/0.1/",
-		"prov": "http://www.w3.org/ns/prov#",
-		"skos": "http://www.w3.org/2004/02/skos/core#",
-		"void": "http://rdfs.org/ns/void#"
+		"skos": "http://www.w3.org/2004/02/skos/core#"
 	}
 }

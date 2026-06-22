@@ -71,20 +71,6 @@ Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
-############################
-#   Annotation Properties
-############################
-
-# Annotation Property: dcterms:description (description)
-
-AnnotationAssertion(rdfs:label dcterms:description "description")
-
-# Annotation Property: dcterms:license (license)
-
-
-# Annotation Property: dcterms:title (title)
-
-
 
 
 
