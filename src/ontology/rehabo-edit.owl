@@ -96,6 +96,8 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_00100
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0010008> "realizable related to realizable"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0010008> "realizable-realizable relationship"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010008> "is realizably related to"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/REHABO_0010008> <http://purl.obolibrary.org/obo/BFO_0000017>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/REHABO_0010008> <http://purl.obolibrary.org/obo/BFO_0000017>)
 
 # Object Property: <http://purl.obolibrary.org/obo/REHABO_0010009> (is facilitated by)
 
@@ -106,21 +108,24 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010009> "2026-06-23T02:34:44Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010009> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010009> "In the case of two dispositions, the difference between the realization of a facilitating disposition vs. a trigger process (that itself might realize a disposition) is at least process parthood. The realization of a trigger begins and nearly always finishes before the beginning of the realization of the disposition. By contrast, the realization of the facilitator is a proper occurrent part of the realization of the disposition. Which means that at earliest, the realization of the facilitator begins at the same time as the realization of the disposition. The trigger would at best overlap (and almost always precede) the facilitating."@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010009> "excludes reciprocal relationship by virtue of proper occurrent parthood."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010009> "It excludes reciprocal relationship by virtue of proper occurrent parthood."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010009> "is facilitated by"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/REHABO_0010009> <http://purl.obolibrary.org/obo/REHABO_0010008>)
+AsymmetricObjectProperty(<http://purl.obolibrary.org/obo/REHABO_0010009>)
 
 # Object Property: <http://purl.obolibrary.org/obo/REHABO_0010010> (is reciprocal realizable of)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010010> "A relation between two realizable entities x and y, where x does not equal y, and x and y are realized by the same process."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010010> "A relation between two realizable entities x and y, where x does not equal y, and for all processes p, p realizes x if and only if p realizes y."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010010> "Manoj Purohit"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0010010> <https://github.com/mcwdsi/rehabo/issues/71>)
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010010> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010010> "2026-06-23T02:42:18Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010010> <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010010> "It excludes facilitation relationship by requiring identity of realizations."@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010010> "Per the Arp BFO book, husband and wife are reciprocal roles, the dispositions of the lock and key to (un)lock the lock are complementary dispositions (we'll also call them reciprocal as it's unclear why BFO book shifts from 'reciprocal' to 'complementary' in the case of dispositions)."@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010010> "excludes facilitation relationship by requiring identity of realizations."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010010> "is reciprocal realizable of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/REHABO_0010010> <http://purl.obolibrary.org/obo/REHABO_0010008>)
+SymmetricObjectProperty(<http://purl.obolibrary.org/obo/REHABO_0010010>)
 
 # Object Property: <http://purl.obolibrary.org/obo/REHABO_0010011> (is necessarily facilitated by)
 
@@ -130,62 +135,8 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.ob
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010011> <https://orcid.org/0009-0001-9103-9263>)
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010011> "2026-06-23T02:58:00Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010011> <https://orcid.org/0000-0002-9881-1017>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010011> "it also means that every realization of x also realizes y."@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010011> "the realization of y is required for the realization of x."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010011> "is necessarily facilitated by"@en)
-SubObjectPropertyOf(<http://purl.obolibrary.org/obo/REHABO_0010011> <http://purl.obolibrary.org/obo/REHABO_0010009>)
-
-############################
-#   Object Properties
-############################
-
-# Object Property: <http://purl.obolibrary.org/obo/REHABO_0010008> (is realizably related to)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010008> "A relationship between two realizable entities."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010008> "Manoj Purohit"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0010008> <https://github.com/mcwdsi/rehabo/issues/71>)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010008> <https://orcid.org/0009-0001-9103-9263>)
-AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010008> "2026-06-23T02:10:08Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010008> <https://orcid.org/0000-0002-9881-1017>)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0010008> "realizable related to realizable"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0010008> "realizable-realizable relationship"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010008> "is realizably related to"@en)
-
-# Object Property: <http://purl.obolibrary.org/obo/REHABO_0010009> (is facilitated by)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010009> "A relation between two realizable entities x and y, where x and y inhere in distinct material entities, and the realization of y is required for the realization of x, or in the case of dispositions, the realization of y would contribute positively to the degree of x's realization."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010009> "Manoj Purohit"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0010009> <https://github.com/mcwdsi/rehabo/issues/71>)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010009> <https://orcid.org/0009-0001-9103-9263>)
-AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010009> "2026-06-23T02:34:44Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010009> <https://orcid.org/0000-0002-9881-1017>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010009> "In the case of two dispositions, the difference between the realization of a facilitating disposition vs. a trigger process (that itself might realize a disposition) is at least process parthood. The realization of a trigger begins and nearly always finishes before the beginning of the realization of the disposition. By contrast, the realization of the facilitator is a proper occurrent part of the realization of the disposition. Which means that at earliest, the realization of the facilitator begins at the same time as the realization of the disposition. The trigger would at best overlap (and almost always precede) the facilitating."@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010009> "excludes reciprocal relationship by virtue of proper occurrent parthood."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010009> "is facilitated by"@en)
-SubObjectPropertyOf(<http://purl.obolibrary.org/obo/REHABO_0010009> <http://purl.obolibrary.org/obo/REHABO_0010008>)
-
-# Object Property: <http://purl.obolibrary.org/obo/REHABO_0010010> (is reciprocal realizable of)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010010> "A relation between two realizable entities x and y, where x does not equal y, and x and y are realized by the same process."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010010> "Manoj Purohit"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0010010> <https://github.com/mcwdsi/rehabo/issues/71>)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010010> <https://orcid.org/0009-0001-9103-9263>)
-AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010010> "2026-06-23T02:42:18Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010010> <https://orcid.org/0000-0002-9881-1017>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010010> "Per the Arp BFO book, husband and wife are reciprocal roles, the dispositions of the lock and key to (un)lock the lock are complementary dispositions (we'll also call them reciprocal as it's unclear why BFO book shifts from 'reciprocal' to 'complementary' in the case of dispositions)."@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010010> "excludes facilitation relationship by requiring identity of realizations."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010010> "is reciprocal realizable of"@en)
-
-# Object Property: <http://purl.obolibrary.org/obo/REHABO_0010011> (is necessarily facilitated by)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010011> "A relationship between two realizable entities x and y, where x is facilitated by y, and additionally the realization of y is required for the realization of x."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010011> "Manoj Purohit"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/REHABO_0010011> <https://github.com/mcwdsi/rehabo/issues/71>)
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010011> <https://orcid.org/0009-0001-9103-9263>)
-AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010011> "2026-06-23T02:58:00Z"^^xsd:dateTime)
-AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010011> <https://orcid.org/0000-0002-9881-1017>)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010011> "it also means that every realization of x also realizes y."@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010011> "the realization of y is required for the realization of x."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010011> "It also means that every realization of x also realizes y."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010011> "The realization of y is required for the realization of x."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010011> "is necessarily facilitated by"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/REHABO_0010011> <http://purl.obolibrary.org/obo/REHABO_0010009>)
 
@@ -580,7 +531,7 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00100
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010014> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010014> "normally, the disposition would be a capability, but the individual requires a device or other organism with a disposition to facilitate."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010014> "requires physical assistance disposition"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010014> <http://purl.obolibrary.org/obo/REHABO_0010012>)
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010014> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/REHABO_0010012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/UBERON_0000465>)))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0010015> (requires assistive device disposition)
 
