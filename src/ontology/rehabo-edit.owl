@@ -506,7 +506,7 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_00100
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/REHABO_0010012> "The disposition may inhere in the same material entity or a part of it, or an entirely different material entity altogether."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010012> "facilitation-requiring disposition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010012> <http://purl.obolibrary.org/obo/BFO_0000016>)
-SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010012> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/REHABO_0010011> <http://purl.obolibrary.org/obo/BFO_0000016>))
+SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010012> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/REHABO_0010013>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/REHABO_0010011> <http://purl.obolibrary.org/obo/BFO_0000016>)))
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0010013> (facilitating)
 
