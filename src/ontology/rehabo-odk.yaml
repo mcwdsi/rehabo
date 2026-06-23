@@ -1,4 +1,5 @@
 id: rehabo
+use_context: true
 title: "The Rehabilitation Ontology"
 description: "An ontology of physical medicine & rehabilitation, physical therapy, occupational therapy, and speech therapy."
 contact: William R. Hogan

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                615b8a6ef3666c5834b6e68cbab91afbda7cfc0c6f238f8c8a930f37ed32b711
+CONFIG_HASH=                0856daaa5042b0164d9b947e0a3e22f83c950592083a2a69ebfeb7ed46d404eb
 
 
 # ----------------------------------------
@@ -26,7 +26,8 @@ EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
 CATALOG=                    catalog-v001.xml
-ROBOT=                      robot --catalog $(CATALOG)
+CONTEXT_FILE =              config/context.json
+ROBOT=                      robot --catalog $(CATALOG) --add-prefixes $(CONTEXT_FILE)
 REASONER=                   ELK
 OWLTOOLS =                  owltools --use-catalog
 RELEASEDIR=                 ../..
@@ -389,7 +390,7 @@ IMPORT_MODULE_TEMPLATE=$(TEMPLATEDIR)/external_import.tsv
 IMPORT_MODULE_SIGNATURE=$(TMPDIR)/external_import_terms.txt
 IMPORT_MODULE=$(IMPORTDIR)/external_import.owl
 $(IMPORT_MODULE): $(IMPORT_MODULE_TEMPLATE) | $(TMPDIR)
-	$(ROBOT) template --template $< \
+	$(ROBOT) template --template $< --add-prefixes $(CONTEXT_FILE) \
  		--ontology-iri "$(ONTBASE)/external_import.owl" \
   		convert -f ofn \
   		--output $@
