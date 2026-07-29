@@ -733,7 +733,7 @@ AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_00100
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010025> "requires moderate personal assistance disposition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010025> <http://purl.obolibrary.org/obo/REHABO_0010016>)
 
-# Class: <http://purl.obolibrary.org/obo/REHABO_0010026> (equires maximal personal assistance disposition)
+# Class: <http://purl.obolibrary.org/obo/REHABO_0010026> (requires maximal personal assistance disposition)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/REHABO_0010026> "A requires personal assistance disposition whose realization requires far more physical exertion on the part of the other organism relative to its bearer."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/REHABO_0010026> "Manoj Purohit"@en)
@@ -741,7 +741,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.ob
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/REHABO_0010026> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_0010026> "2026-07-26T02:26:46Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0010026> <https://orcid.org/0009-0001-9103-9263>)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010026> "equires maximal personal assistance disposition"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0010026> "requires maximal personal assistance disposition"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0010026> <http://purl.obolibrary.org/obo/REHABO_0010016>)
 
 # Class: <http://purl.obolibrary.org/obo/REHABO_0010027> (requires total personal assistance disposition)
