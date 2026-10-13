@@ -389,7 +389,6 @@ AnnotationAssertion(dcterms:created <http://purl.obolibrary.org/obo/REHABO_00000
 AnnotationAssertion(dcterms:creator <http://purl.obolibrary.org/obo/REHABO_0000015> <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0000015> "body motion function"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0000015> "body movement function"@en)
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/REHABO_0000015> "locomotion function"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/REHABO_0000015> "body movement"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/REHABO_0000015> "bodily movement function"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/REHABO_0000015> <http://purl.obolibrary.org/obo/REHABO_0000013>)
