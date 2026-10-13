@@ -8,5 +8,6 @@
     <uri name="http://purl.obolibrary.org/obo/rehabo/imports/omrse_import.owl" uri="imports/omrse_import.owl" />
     <uri name="http://purl.obolibrary.org/obo/rehabo/imports/iao_import.owl" uri="imports/iao_import.owl" />
     <uri name="http://purl.obolibrary.org/obo/rehabo/imports/uberon_import.owl" uri="imports/uberon_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/rehabo/imports/mfoem_import.owl" uri="imports/mfoem_import.owl" />
   </group>
 </catalog>

@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                0856daaa5042b0164d9b947e0a3e22f83c950592083a2a69ebfeb7ed46d404eb
+CONFIG_HASH=                35010c9126de4d2c7aaa70bd25d4b97914d14741659d1b4ce7b82285bc3e1f31
 
 
 # ----------------------------------------
@@ -189,7 +189,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro bfo omo ogms omrse iao uberon
+IMPORTS =  ro bfo omo ogms omrse iao uberon mfoem
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -625,6 +625,14 @@ mirror-iao: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/uberon.owl
 mirror-uberon: | $(TMPDIR)
 	$(ROBOT) remove -I http://purl.obolibrary.org/obo/uberon/subsets/human-view.owl --base-iri http://purl.obolibrary.org/obo/UBERON  --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
+
+
+## ONTOLOGY: mfoem
+.PHONY: mirror-mfoem
+.PRECIOUS: $(MIRRORDIR)/mfoem.owl
+mirror-mfoem: | $(TMPDIR)
+	curl -L $(OBOBASE)/mfoem.owl --create-dirs -o $(TMPDIR)/mfoem-download.owl --retry 4 --max-time 200 && \
+	$(ROBOT) convert -i $(TMPDIR)/mfoem-download.owl -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
