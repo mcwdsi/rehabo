@@ -46,6 +46,8 @@ import_group:
       module_type: filter 
       mirror_from: http://purl.obolibrary.org/obo/uberon/subsets/human-view.owl
       make_base: true
+    - id: mfoem
+      module_type: slme
 license: https://creativecommons.org/public-domain/cc0/
 documentation:
   documentation_system: mkdocs
