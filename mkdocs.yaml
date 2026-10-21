@@ -23,6 +23,7 @@ repo_url: https://github.com/mcwdsi/rehabo/
 
 nav:
   - Getting started: index.md
+  - Implemented Terms: implemented-terms.md
   - Cite: cite.md
   - How-to guides:
       - Standard ODK workflows:
